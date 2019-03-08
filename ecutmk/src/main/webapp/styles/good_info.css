@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+.a{
+    height: 500px;
+    width: auto;
+    font-weight: bold;
+    margin: auto;
+
+}
+.a .b{
+    position: absolute; /* 参照非 static 定位的父元素来确定自己的位置 ( 绝对定位 ) */
+    right: 360px; /* 当前元素的右边缘 距离 父元素 的右边缘 150 像素 */
+    top: 100px ; /* 当前元素的上边缘 距离 父元素 的上边缘 50 像素 */
+    width: 450px ;
+    height:auto;
+}
+.a .b .c{
+    width:97%;
+    height:55px;
+    margin: auto;
+}
+.a .b .c p{
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+}
+.a .b .d{
+     width:99%;
+     height:55px;
+    margin: auto;
+ }
+.a .b .d span{
+    overflow: hidden;
+    font-size: 16px;
+    margin-top: 15px;
+    float: left;
+}
+.a .b .d strong{
+    font-size: 24px;
+    color:red;
+    float: right;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-right: 150px;
+}
+.a .b .e {
+    width: 97%;
+    height: 55px;
+    margin: auto;
+}
+.a .b .e p{
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 35px;
+}
+.a .b .f{
+
+    margin-top: 20px;
+    width:95%;
+    height:55px;
+}
+.a .b .f input{
+    width:136px;
+    height: 40px;
+    background:#FFFFFF;
+    margin-left: 100px;
+    color: #ff1729;
+    border:1px solid #ff1729;
+}
+
+.q{
+    height: 300px;
+    width:99%;
+    font-weight: bold;
+    margin: auto;
+
+}
+.q h4{
+    text-align: center;
+}
+.q .w {
+    overflow: hidden;
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+}
+.q .r{
+    overflow: hidden;
+    text-align: left;
+    font-size: 16px;
+    width:60%;
+    height: auto;
+    line-height: 35px;
+    float: right;
+    margin-right: 50px;
+}
+.q .w img{
+    width: 200px;
+    height: 200px;
+    margin-left: 25px;
+}
+
+
+
+

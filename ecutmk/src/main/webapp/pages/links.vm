@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>友情链接</title>
+    <script type="text/javascript" src="/bootstrap/js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+    <link href="/styles/css/style.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        li{
+            list-style: none;
+        }
+        h3{
+            color:#2a88ff;
+            font-family: courier new, courier, monospace
+
+        }
+        a{
+            color: #fc3744;
+            font-size: 1em;
+        }
+        </style>
+</head>
+<!-----------------------------------导航栏-------------------------------------------->
+<body class="news">
+<div class="navbar container topbox">
+    <div class="navbar-inner">
+        <div class="page-head">
+            <div id="page-head-right">
+                <div id="main-login" class="pull-right">
+                    <a id="" class="twi-btn-left" name="login" href="login-in.vm"><span>登录</span></a>
+                    <a id="" class="twi-btn-right" name="register" href="sign-up.vm"><span>注册</span></a>
+                </div>
+            </div>
+        </div>
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#"><img src="../images/dl1.png" width="123" height="64"/></a>
+        <div class="nav-collapse">
+            <ul class="nav">
+                <li> <a class="main-menu" href="index.vm">首页</a> </li>
+                <li> <a class="main-menu" href="p_info.vm">我的信息</a></li>
+                <li> <a class="main-menu" href="aboutus.html">关于我们</a> </li>
+                <li> <a class="main-menu" href="issue.vm">联系我们</a> </li>
+                <li> <a class="main-menu" href="#">友情链接</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<!-----------------------------------主体container-------------------------------------------->
+<div class="container main-body">
+    <div class="row" style="text-align: center">
+        <div class="span3" style="text-align: center">
+         <h3 >校内链接</h3><hr>
+            <ul>
+                <li><a href="http://www.ecit.edu.cn">东理官网</a></li>
+                <li><a href="http://m.5read.com/ecit">东理图书馆</a></li>
+                <li><a href="#">最新校历</a></li>
+                <li><a href="#">核新讲坛</a></li>
+                <li><a href="#">东理招生就业处</a></li>
+
+            </ul>
+        </div>
+        <div class="span3">
+            <h3>考试链接</h3><hr>
+            <ul>
+                <li><a target="_blank" href="http://cet.neea.edu.cn/cet/">四六级查询</a></li>
+                <li><a target="_blank" href="http://www.jxeea.cn">教育考试院官网</a></li>
+                <li><a target="_blank" href="http://www.jxedu.gov.cn">江西教育网</a></li>
+                <li><a target="_blank" href="http://61.191.55.88/xufei/">江西大学生在线</a></li>
+            </ul>
+        </div>
+        <div class="span3">
+            <h3 >生活服务</h3><hr>
+            <ul>
+                <li><a href="#">快递查询</a></li>
+                <li><a href="www.chelaile.net.cn">市内公交</a></li>
+                <li><a href="#">常用电话</a></li>
+                <li><a href="issue.vm">加入我们</a></li>
+
+            </ul>
+        </div>
+        <div class="span3">
+            <h3>面向开发者</h3><hr>
+            <ul>
+                <li><a href="#">API</a></li>
+                <li><a href="#">网站源码</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-----------------------------------尾部Footer------------------------------------------->
+<footer class="container">
+
+    <div class="copyright"> 此网站由东华理工大学软件工程专业学生开发，仅供学习交流使用！ <br />
+        Copyright &copy; 2019-2030 ecutMarket.com, all rights reserved.  </div>
+</footer>
+</body>
+</html>

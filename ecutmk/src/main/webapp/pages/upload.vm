@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>发布页面</title>
+    <script type="text/javascript" src="/bootstrap/js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+    <link href="/styles/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.css">
+    <style>
+        textarea{
+        height:400px;
+            width: 800px;
+        font-size:12px;
+        color:#f00;
+        text-align: center;
+            margin-left: 15%;
+            margin-right:  15%;
+        }
+    </style>
+</head>
+<body class="news">
+<div class="navbar container topbox">
+    <div class="navbar-inner">
+        <div class="page-head">
+            <div id="page-head-right">
+                <div id="main-login" class="pull-right">
+                    <a id="" class="btn btn-danger" name="login-out" href="#"><span>注销</span></a>
+
+                </div>
+            </div>
+        </div>
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#"><img src="../images/dl1.png" width="123" height="64"/></a>
+        <div class="nav-collapse">
+            <ul class="nav">
+                <li> <a class="main-menu" href="/index.vm">首页</a> </li>
+                <li> <a class="main-menu" href="/pages/refactor.vm">修改个人信息</a></li>
+                <li> <a class="main-menu" href="/pages/upload.vm">发布商品信息</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container main-body">
+      <form action="/good/release" method="post" enctype="multipart/form-data" class="file">
+          <div class="" style="text-align: center">
+              <input type="text" name="summary" placeholder="请输入标题" >
+              <input type="text" name="price" placeholder="请输入价格" >
+              <select name="kind">
+                  <option value="dianzi">电子产品</option>
+                  <option value="shuji">文体书籍</option>
+                  <option value="shenghuo">生活用品</option>
+              </select>
+          </div>
+          <div><textarea  id="introduce" placeholder="请输入商品详细介绍" name="explain"></textarea></div><!--  这是文本域内容-->
+          <div class="row" style="width:80% ;text-align: center; margin: auto" >
+             <input style="width:20% " type="file" name="upfile1" accept="image/*">
+            <input style="width:20% "  type="file" name="upfile2" accept="image/*">
+            <input style="width:20% " type="file" name="upfile3" accept="image/*">
+           <input  style="width:20% " type="file" name="upfile4" accept="image/*">
+
+          </div><br>
+             <div style="text-align: center"> <input  type="submit" value="提交" class="btn btn-success">
+          </div>
+      </form>
+
+</div>
+
+<footer class="container">
+    <div class="row">
+        <hr>
+        <div class="span3">
+        </div>
+        <div class="span3">
+        </div>
+        <div class="span3">
+        </div>
+        <div class="span3">
+        </div>
+    </div>
+    <div class="copyright"> 此网站由东华理工大学软件工程专业学生开发，仅供学习交流使用！ <br />
+        Copyright &copy; 2019-2030 ecutMarket.com, all rights reserved.  </div>
+</footer>
+</body>
+</html>

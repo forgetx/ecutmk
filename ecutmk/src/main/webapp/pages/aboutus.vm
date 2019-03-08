@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>关于我们</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="/bootstrap/js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+    <link href="/styles/css/style.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        div.jumbotron {
+            background: url("../images/ecut3.jpg" )no-repeat ;
+            height: 590px;
+            width: 1170px;
+            background-position: center;
+            padding: 0;
+            margin-top: 0;
+            border-color: gray;
+            background-size: 1160px 620px ;
+        }
+        div.jumbotron h1 {
+            display: none;
+        }
+        div.jumbotron .btn {
+            position: absolute;
+            bottom: 14px;
+            right: 20px;
+        }
+        div.col-md-4 img {
+            width: 180px;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar container topbox">
+    <div class="navbar-inner">
+        <div class="page-head">
+            <div id="page-head-right">
+                <div id="main-login" class="pull-right">
+
+                    <a id="" class="btn btn-danger" name="login-out" href="#"><span>注销</span></a>
+                </div>
+            </div>
+        </div>
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#"><img src="../images/dl1.png" width="123" height="64"/></a>
+        <div class="nav-collapse">
+            <ul class="nav">
+                <li> <a class="main-menu" href="/index.vm">首页</a> </li>
+                #if(${user})
+                    <li> <a class="main-menu" href="/user/good">我的信息</a></li>
+                #end
+                <li> <a class="main-menu" href="/pages/aboutus.vm">关于我们</a> </li>
+                <li> <a class="main-menu" href="issue.vm">联系我们</a> </li>
+                <li> <a class="main-menu" href="#">友情链接</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container main-body">
+    <div class="jumbotron">
+    </div>
+    <div class="row" style="text-align: center">
+        <div class="row">
+            <div class="span3">
+                <h2>团队成员</h2>
+                <p style="text-align: center;margin-left: 40px">我们是东华理工大学2016级软件工程专业的学生，非常开心能在一起做项目。</p>
+                <p><a class="btn btn-primary" href="#">了解更多&raquo;</a></p>
+            </div>
+            <div class="span3">
+                <h2>团队简介</h2>
+                <p style="text-align: center">团队成员均具有一个礼拜的以上的开发经验，熟练掌握idea编译软件的打开和关闭，精通各种主流语言的拼写。</p>
+                <p><a class="btn btn-primary" href="#">了解更多&raquo;</a></p>
+            </div>
+            <div class="span3">
+                <h2>团队精神</h2>
+                <p style="text-align: center">团队成员基本靠混，功能全靠大佬和COPY。我们不生产代码，我们只是代码的搬运工。</p>
+                <p><a class="btn btn-primary" href="#">了解更多&raquo;</a></p>
+            </div>
+            <div class="span3">
+                <h2>想说的话</h2>
+                <p style="text-align: center">没做过项目，希望大家喜欢......听老师讲课，留下了没有技术的泪水。</p>
+                <p><a class="btn btn-primary" href="#">了解更多&raquo;</a></p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <footer  style="text-align: center">
+        <p>此网站由东华理工大学软件工程专业学生开发，仅供学习交流使用！ <br />
+            Copyright &copy; 2019-2030 ecutMarket.com, all rights reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>

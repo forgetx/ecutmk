@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+body { margin: 0 ; padding: 0 ; }
+
+.header {
+    height: 80px ;
+}
+
+.container main-body {
+    overflow: hidden;
+    width: 400px;
+}
+
+.container main-body .good {
+    width: 80% ;
+    margin: auto ;
+    border: 1px solid #dedede ;
+    border-radius: 5px ;
+}
+
+.container main-body .good .title-wrapper {
+    border-bottom: 1px solid #dedede ;
+}
+
+.container main-body .good .title-wrapper input {
+    margin-left: 0.5% ;
+    width: 100px ;
+    border: none ;
+    outline: none ;
+    height: 50px ;
+    line-height: 50px ;
+}
+
+.container main-body .good .simditor {
+    border: none ;
+}
+
+.container main-body .good .buttons {
+    text-align: right ;
+    border-top: 1px solid #dedede ;
+}
+
+.container main-body .good .buttons #submit {
+    margin: auto;
+    width: 120px;
+    height: 50px;
+    font-size: 16px ;
+    border: 1px solid #3385ff ;
+    background: #3385ff ;
+    color: #FFFFFF ;
+}
+.container main-body .good .buttons input:hover {
+    background: #3861ff;
+}
+
+.footer {
+
+}

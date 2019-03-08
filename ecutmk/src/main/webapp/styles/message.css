@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    height: 100px;
+    background: #dedede;
+}
+
+.main{
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.main .box{
+    overflow: hidden;
+    width: 60%;
+    margin: auto;
+
+}
+
+.main .box .left{
+    float: left;
+    width: 20%;
+
+
+}
+
+.main .box .left .anniu{
+
+}
+
+.main .box .left .anniu input{
+    float: right;
+    margin: 10px 0px;
+    height: 50px;
+    width: 80%;
+    background: #3385ff;
+    font-size: 15px;
+    color: #ffffff;
+    border: none;
+    outline: none;
+
+}
+.main .box .left .anniu input:hover{
+    background: #4289ff;
+    cursor: pointer;
+}
+
+
+
+.main .box .content{
+    float: right;
+    width: 80%;
+    margin: auto;
+
+
+
+}
+
+.main .box .content .interface{
+    width: 95%;
+    background:#ffffff;
+}
+
+.main .box .content .interface .row{
+    width: 95%;
+    background:#ffffff;
+    height: 50px;
+    margin: 10px 10px;
+    border: 1px solid #eee7e3;
+    border-radius: 5px;
+
+}
+.main .box .content .interface .row a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer{
+    height: 200px;
+
+}

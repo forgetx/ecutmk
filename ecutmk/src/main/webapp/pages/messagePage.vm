@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>留言 </title>
+        <link rel="stylesheet" href="/font-awesome/css/font-awesome.css">
+
+
+        <link rel="stylesheet" href="/styles/messagePage.css">
+
+    </head>
+    <body>
+
+
+    <div class="header"></div>
+
+    <div class="main">
+
+                    <div class="message">
+                                #foreach( $message in $messages )
+                                    <div class="row">
+                                        <div class="top">
+                                            <label> <i class="fa fa-user-o"></i> $!{message.user.username}  </label>
+                                            <span> $!{message.M_date}</span>
+                                        </div>
+                                        <div class="content">
+                                            <span> $!{message.M_content}</span>
+                                        </div>
+                                    </div>
+                                #end
+
+                    </div>
+
+
+      </div>
+      <div class="footer">
+          <form action="messageIssue.vm">
+          <input type="submit" value="发起评论" style="background: #2e6da4">
+          </form>
+      </div>
+    </body>
+</html>

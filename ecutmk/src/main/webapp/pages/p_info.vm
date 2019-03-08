@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>我的信息</title>
+    <script type="text/javascript" src="/bootstrap/js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+    <link href="/styles/css/style.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .news .container .row  .text-center .value{
+            padding: 12px 0 0 20px;
+            line-height: 25px;
+            font-weight: 700;
+            margin-top: -1px;
+            zoom: 1;
+            position: relative;
+        }
+    </style>
+
+</head>
+<body class="news">
+            <div class="navbar container topbox">
+                <div class="navbar-inner">
+                    <div class="page-head">
+                        <div id="page-head-right">
+                            <div id="main-login" class="pull-right">
+                                <a id="" class="twi-btn-left" name="login-out" href="/user/sign/out"><span>注销</span></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#"><img src="../images/dl1.png" width="123" height="64"/></a>
+                    <div class="nav-collapse">
+                        <ul class="nav">
+                            <li> <a class="main-menu" href="/list/all">首页</a> </li>
+                            <li> <a class="main-menu" href="/pages/refactor.vm">修改个人信息</a></li>
+                            <li> <a class="main-menu" href="/pages/upload.vm">发布商品信息</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+                    <div class="container main-body">
+                        <div class="row" >
+                            <div class="text-center col-sm-3" style="text-align: center">
+                                <img src="../images/person.jpg" class="img-circle img-responsive" title="圆形图片"/>
+                            </div>
+                        </div>
+                        <div class="row" >
+                            <div class="text-center col-sm-3" style="text-align: center">
+                                <span style="font-size: medium;font-weight:bold;color: lightseagreen">&nbsp;ID:</span><span class="value">${user.id}</span><br>
+                                <span style="font-size: medium;font-weight:bold;color: lightseagreen">昵&nbsp;&nbsp;称:</span><span class="value">${user.username}</span><br>
+                                <span style="font-size: medium;font-weight:bold;color: lightseagreen">联系方式:</span><span span class="value">${user.phone}</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="span8">
+                                <section>
+                                    <div class="page-header">
+                                        <h2>已发布的商品</h2>
+                                    </div>
+                                </section>
+                                #foreach( $Good in $MyGoods )
+
+                                <div class="articles">
+                                    <div class="article">
+                                        <div class="row">
+                                            <div class="span2">
+                                                <div class="thumnail"> <img src="/image/show?filename=${Good.good_picture1}" width="120px"height="120px"/> </div>
+                                            </div>
+                                            <div class="span6">
+                                                <div class="title"> <a href="#">${Good.good_summary}</a> </div>
+                                                <div class="price"> <span>${Good.good_price}</span> </div>
+                                                <div class="explain"> ${Good.good_explain} </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                #end
+                                <div class="row">
+                                    <div class="span8 offset2">
+                                        <div class="pagination">
+                                            <ul>
+                                                <li class="active"><a class="endless_page_link" href="#" rel="page">1</a></li>
+                                                <li><a class="endless_page_link" href="#" rel="page">2</a></li>
+                                                <li><a class="endless_page_link" href="#" rel="page">3</a></li>
+                                                <li class="endless_separator"><a href="#">...</a></li>
+                                                <li><a class="endless_page_link" href="#" rel="page">8</a></li>
+                                                <li><a class="endless_page_link" href="#" rel="page">9</a></li>
+                                                <li><a class="endless_page_link" href="#" rel="page">10</a></li>
+                                                <li><a class="endless_page_link" href="#" rel="page">&gt;&gt;</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div style="float: right" class="span4 width5">
+                                <div id="shanbay-news-promotion">
+                                    <div class="page-header">
+                                        <h3>关注东理集市</h3>
+                                    </div>
+                                    <div class="row" > <span class="span2" ><a href="#"><img src="../images/erweima.png" height="170px" width="170px" style="margin-left: 50px"></a></span>
+                                        <p style="font-weight: bold;color:#ff3d5a;" class="span3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;欢迎关注东理集市微信公众号，了解更多关于东理集市的最新动态和优惠活动。</p>
+                                    </div>
+                                </div>
+                                <section>
+                                    <div class="page-header">
+                                        <h3>热门搜索</h3>
+                                    </div>
+                                </section>
+                                <div class="sources">
+                                    <div id="sources">
+                                        <div class="sources">
+                                            <div class="source
+    row">
+                                                <div class="span1">
+                                                    <div class="thumbnail"><img src="../images/热搜1.jpg" width="100px" height="100px"></div>
+                                                </div>
+                                                <div class="span3">
+                                                    <h3><a href="#"><img src="../images/rs1.png" width="200px" height="50px" ></a></h3>
+                                                </div>
+                                            </div>
+                                            <div class="source
+    row">
+                                                <div class="span1">
+                                                    <div class="thumbnail"><img src="../images/热搜2.jpg" width="100px" height="100px"></div>
+                                                </div>
+                                                <div class="span3">
+                                                    <h3><a href="#"><img src="../images/rs2.png" width="200px" height="50px" ></a></h3>
+                                                </div>
+                                            </div>
+                                            <div class="source
+    row">
+                                                <div class="span1">
+                                                    <div class="thumbnail"><img src="../images/热搜3.jpg" width="100px" height="100px"></div>
+                                                </div>
+                                                <div class="span3">
+                                                    <h3><a href="#"><img src="../images/rs3.png" width="200px" height="50px" ></a></h3>
+                                                </div>
+                                            </div>
+                                            <div class="source
+    row">
+                                                <div class="span1">
+                                                    <div class="thumbnail"><img src="../images/热搜4.jpg" width="100px" height="100px"></div>
+                                                </div>
+                                                <div class="span3">
+                                                    <h3><a href="#"><img src="../images/rs4.png" width="200px" height="50px" ></a></h3>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<footer class="container">
+        <div class="row">
+            <hr>
+            <div class="span3">
+            </div>
+            <div class="span3">
+            </div>
+            <div class="span3">
+            </div>
+            <div class="span3">
+            </div>
+        </div>
+        <div class="copyright"> 此网站由东华理工大学软件工程专业学生开发，仅供学习交流使用！ <br />
+            Copyright &copy; 2019-2030 ecutMarket.com, all rights reserved.  </div>
+</footer>
+</body>
+</html>

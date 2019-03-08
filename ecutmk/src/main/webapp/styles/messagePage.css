@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    height: 100px;
+    background: #dedede;
+}
+
+.main{
+
+
+}
+
+.main .message{
+    width: 670px;
+
+    margin: auto;
+    background: #5aa4ff;
+}
+.main .message .row{
+    margin: 8px 1.5%;
+    width: 90%;
+
+
+}
+.main .message .row .top{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+.main .message .row .top label{
+    width: 50%;
+    height: 30px;
+    float: left;
+    text-align: left;
+    color: #FFFFFF;
+    size: 12px;
+}
+.main .message .row .top span{
+    width: 50%;
+    float: right;
+    text-align: right;
+    color: #FFFFFF;
+    size: 12px;
+}
+
+.main .message .row .content{
+    size: 16px;
+}
+
+.footer{
+    height:30px;
+    width:20%;
+    margin: auto;
+
+}
+
+.footer input{
+    height: 50px;
+    width: 95%;
+    margin: auto;
+    size: 16px;
+    background-color: #3385ff;
+    color: #FFFFFF;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+.footer input:hover{
+    cursor: pointer;
+}

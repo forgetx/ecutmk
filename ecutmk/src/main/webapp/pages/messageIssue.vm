@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发表提问</title>
+
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/styles/Messageissue.css">
+
+    <link rel="stylesheet" type="text/css" href="/simditor/styles/simditor.css" />
+
+    <script type="text/javascript" src="/simditor/scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="/simditor/scripts/module.js"></script>
+    <script type="text/javascript" src="/simditor/scripts/hotkeys.js"></script>
+    <script type="text/javascript" src="/simditor/scripts/uploader.js"></script>
+    <script type="text/javascript" src="/simditor/scripts/simditor.js"></script>
+
+</head>
+<body>
+
+<div class="header"></div>
+
+<!-- main start -->
+<div class="main">
+    <!-- form start -->
+    <form action="/message/issue" method="post">
+            <div class="content">
+                <textarea name="content" placeholder="请输入留言内容" id="editor"></textarea>
+                <script type="text/javascript" >
+                    var editor = new Simditor( {
+                        textarea: $('#editor') ,
+                        upload : {
+                            url : "/image/upload",
+                            fileKey : "upfile" ,
+                            connectionCount : 3 ,
+                            leaveConfirm : "图片正在上传，你确定要离开当前页面吗?"
+                        }
+                    } );
+                </script>
+            </div>
+            <div class="buttons">
+                <input type="submit" value="发表" >
+            </div>
+        </div>
+    </form>  <!-- form end -->
+
+</div> <!-- main end -->
+
+<div class="footer"></div>
+
+</body>
+</html>

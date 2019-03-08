@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body { margin: 0 ; padding: 0 ; }
+
+.header {
+    height: 80px ;
+}
+
+.main {
+    overflow: hidden;
+    width: 800px;
+    margin: auto;
+}
+
+
+.main .buttons {
+    text-align: right ;
+    border-top: 1px solid #dedede ;
+}
+
+.main .buttons input {
+    margin: 5px;
+    width: 120px ;
+    height: 50px ;
+    font-size: 16px ;
+    border: 1px solid #3385ff ;
+    background: #3385ff ;
+    color: #FFFFFF ;
+}
+
+.main .buttons input:hover {
+    background: #3861ff;
+}
+
+.footer {
+
+}
